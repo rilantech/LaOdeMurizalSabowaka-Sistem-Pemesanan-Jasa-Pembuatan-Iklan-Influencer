@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/cardviewjadwalposyandu" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="100dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Nama Anak"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nama_bayi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nama"/>
+                    <ImageView android:id="@+id/tombolhapus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="300dp" android:src="@drawable/hapus"/>
+                    <ImageView android:id="@+id/tomboleksport" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="330dp" android:src="@drawable/eksport"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Jenis Kelamin"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/jenis_kelamin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Nama Ibu"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nama_ibu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="NIK"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nik_ibu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="ttl"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Anak Ke- "/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                    <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/anak_ke" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_tambah_project_brand"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B3935"
+        android:padding="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tombol_kembali"
+                android:src="@drawable/icon_tombol_kembali"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:paddingRight="40dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tambah Project"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:paddingBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Logo Brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:padding="50dp"
+                android:src="@drawable/ic_baseline_file_upload_24"
+                android:id="@+id/ivLogo_Brand"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Nama Project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textSize="15dp"
+                android:hint="Masukan Nama Project"
+                android:padding="5dp"
+                android:id="@+id/etNama_Project"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:padding="5dp"
+                android:id="@+id/spinner_Kategori"
+                android:entries="@array/kategori"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Lama Kontrak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:padding="5dp"
+                android:id="@+id/spinner_lama_kontrak"
+                android:entries="@array/lama_kontrak"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Keterangan Project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textSize="15dp"
+                android:hint="Masukan Keterangan Project..."
+                android:gravity="start"
+                android:padding="5dp"
+                android:id="@+id/etKriteria_Project"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:layout_height="300dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Gaji Influencer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:visibility="gone"
+                android:textSize="15dp"
+                android:hint="Masukan Gaji Influencer"
+                android:padding="5dp"
+                android:id="@+id/etGaji_Influencer"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnbatal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_tombol_batal_simpan_data_anak"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnsimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rounded_tombol_simpan_data_anak"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

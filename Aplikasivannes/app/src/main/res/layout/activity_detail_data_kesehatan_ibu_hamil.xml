@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/biru" android:layout_width="match_parent" android:layout_height="55dp">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvNama" android:padding="3dp" android:layout_width="360dp" android:layout_height="wrap_content" android:text="E-Posyandu Petugas" sweet:layout_constraintBottom_toBottomOf="parent" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0"/>
+        <ImageView android:id="@+id/butonlogout" android:layout_width="36dp" android:layout_height="39dp" android:layout_marginTop="10dp" android:layout_marginEnd="4dp" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:srcCompat="@drawable/iconlogout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/konten" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="124dp" sweet:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:textSize="15dp" android:textColor="@color/white" android:id="@+id/tvNamapetugas" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginBottom="15dp" android:text="20650009" sweet:layout_constraintBottom_toTopOf="@+id/konten" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintHorizontal_bias="0.02" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0.383"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <FrameLayout android:background="#ee66a6" android:padding="6dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/tombol_kembali" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="1dp" android:src="@drawable/logo_kembali"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Detail Kesehatan Ibu Hamil"/>
+    </FrameLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/cari" android:background="@drawable/rounded_kotak_pencarian" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Cari Data..." android:singleLine="true" android:drawableRight="@drawable/icon_search" android:textAlignment="textStart"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nama Ibu"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nama_ibu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nama"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="NIK"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nik_ibu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+    </RelativeLayout>
+    <TextView android:textSize="15dp" android:textStyle="bold" android:layout_gravity="right" android:id="@+id/txttambahdata1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+Tambah Data"/>
+    <TextView android:gravity="center" android:id="@+id/ketdatakosong" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Data Kosong"/>
+    <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp"/>
+    <WebView android:id="@+id/webview1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

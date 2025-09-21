@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/biru" android:layout_width="match_parent" android:layout_height="55dp">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvNama" android:padding="3dp" android:layout_width="360dp" android:layout_height="wrap_content" android:text="E-Posyandu Petugas" sweet:layout_constraintBottom_toBottomOf="parent" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0"/>
+        <ImageView android:id="@+id/butonlogout" android:layout_width="36dp" android:layout_height="39dp" android:layout_marginTop="10dp" android:layout_marginEnd="4dp" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:srcCompat="@drawable/iconlogout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/konten" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="124dp" sweet:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:textSize="15dp" android:textColor="@color/white" android:id="@+id/tvNamapetugas" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginBottom="15dp" android:text="20650009" sweet:layout_constraintBottom_toTopOf="@+id/konten" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintHorizontal_bias="0.02" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0.383"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <FrameLayout android:background="#ee66a6" android:padding="6dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/tombol_kembali" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="1dp" android:src="@drawable/logo_kembali"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Detail Kesehatan Ibu Nifas"/>
+    </FrameLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nama Ibu"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nama_ibu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nama"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="NIK"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nik_ibu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <ImageView android:id="@+id/tomboledit" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="270dp" android:src="@drawable/edit"/>
+        <ImageView android:id="@+id/tombolhapus" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="297dp" android:src="@drawable/hapus"/>
+        <ImageView android:id="@+id/tomboleksport" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="325dp" android:src="@drawable/eksport"/>
+    </RelativeLayout>
+    <TextView android:textSize="15dp" android:textStyle="bold" android:layout_gravity="right" android:id="@+id/txttambahdata1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+Tambah Data"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nifas Ke-"/>
+        <Spinner android:id="@+id/spinnernifas_ke" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nama Anak"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvnama_anak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:text="Anak Ke-"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/cardviewjadwalposyandu" android:background="@drawable/rounded_kotak_jadwalposyandu" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kunjungan 1 (6 Jam - 3 Hari)"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Kunjungan"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtanggal_kunjungan_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="Anak Ke-"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="Jenis Pelayanan &amp; Pemantauan"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kondisi Ibu Secara\nUmum"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkondisi_ibu_secara_umum_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="ttl"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tekanan darah, suhu\ntubuh, respirasi, nadi"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_tekanan_darah_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pendarahan pervaginam"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_pendarahan_pervaginam_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kondisi perineum"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkondisi_perineum_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanda Infeksi"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtanda_infeksi_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kontraksi uteri"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkontraksi_uteri_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tinggi Fundus Uteri"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtinggi_fundus_uteri_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Lokhia"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvlokhia_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemeriksaan jalan lahir"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemeriksaan_jalan_lahir_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemeriksaan payudara"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemeriksaan_payudara_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Produksi ASI"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvproduksi_asi_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemberian Kapsul Vit.A"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemberian_kapsul_vitamin_a_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pelayanan kontrasepsi\npascapersalinan"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpelayanan_kontrasepsi_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Penanganan resiko\ntinggi dan komplikasi\npada nifas"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpenanganan_resiko_tinggi_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Buang Air Besar (BAB)"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvbuang_air_besar_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Buang Air Kecil (BAK)"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvbuang_air_kecil_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="Catatan Dokter/Bidan :"/>
+                        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvcatatan_dokter_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:text="Catatan Dokter/Bidan :"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/rounded_kotak_jadwalposyandu" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kunjungan 2 (4 - 28 Hari)"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Kunjungan"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtanggal_kunjungan_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="Anak Ke-"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="Jenis Pelayanan &amp; Pemantauan"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kondisi Ibu Secara\nUmum"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkondisi_ibu_secara_umum_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="ttl"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tekanan darah, suhu\ntubuh, respirasi, nadi"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_tekanan_darah_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pendarahan pervaginam"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_pendarahan_pervaginam_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kondisi perineum"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkondisi_perineum_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanda Infeksi"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtanda_infeksi_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kontraksi uteri"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkontraksi_uteri_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tinggi Fundus Uteri"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtinggi_fundus_uteri_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Lokhia"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvlokhia_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemeriksaan jalan lahir"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemeriksaan_jalan_lahir_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemeriksaan payudara"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemeriksaan_payudara_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Produksi ASI"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvproduksi_asi_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemberian Kapsul Vit.A"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemberian_kapsul_vitamin_a_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pelayanan kontrasepsi\npascapersalinan"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpelayanan_kontrasepsi_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Penanganan resiko\ntinggi dan komplikasi\npada nifas"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpenanganan_resiko_tinggi_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Buang Air Besar (BAB)"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvbuang_air_besar_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Buang Air Kecil (BAK)"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvbuang_air_kecil_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="Catatan Dokter/Bidan :"/>
+                        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvcatatan_dokter_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:text="Catatan Dokter/Bidan :"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/rounded_kotak_jadwalposyandu" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kunjungan 3 (29 - 42 Hari)"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Kunjungan"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtanggal_kunjungan_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="Anak Ke-"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="Jenis Pelayanan &amp; Pemantauan"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kondisi Ibu Secara\nUmum"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkondisi_ibu_secara_umum_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="ttl"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tekanan darah, suhu\ntubuh, respirasi, nadi"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_tekanan_darah_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pendarahan pervaginam"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_pendarahan_pervaginam_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kondisi perineum"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkondisi_perineum_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanda Infeksi"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtanda_infeksi_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kontraksi uteri"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkontraksi_uteri_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tinggi Fundus Uteri"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvtinggi_fundus_uteri_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Lokhia"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvlokhia_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemeriksaan jalan lahir"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemeriksaan_jalan_lahir_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemeriksaan payudara"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemeriksaan_payudara_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Produksi ASI"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvproduksi_asi_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pemberian Kapsul Vit.A"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpemberian_kapsul_vitamin_a_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pelayanan kontrasepsi\npascapersalinan"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpelayanan_kontrasepsi_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Penanganan resiko\ntinggi dan komplikasi\npada nifas"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvpenanganan_resiko_tinggi_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Buang Air Besar (BAB)"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvbuang_air_besar_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Buang Air Kecil (BAK)"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvbuang_air_kecil_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="Catatan Dokter/Bidan :"/>
+                        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvcatatan_dokter_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:text="Catatan Dokter/Bidan :"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/rounded_kotak_jadwalposyandu" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kesimpulan Akhir Nifas"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Keadaan Ibu"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkeadaan_ibu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Komplikasi Nifas"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkomplikasi_nifas" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Keadaan Bayi"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvkeadaan_bayi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="jmlanak"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:gravity="center" android:id="@+id/ketdatakosong" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Data Kosong"/>
+        </LinearLayout>
+    </ScrollView>
+    <WebView android:id="@+id/webview1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

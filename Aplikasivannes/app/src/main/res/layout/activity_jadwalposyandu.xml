@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:ndroid="http://schemas.android.com/apk/distribution"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Jadwalposyandu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/biru">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="E-Posyandu Petugas"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            sweet:layout_constraintBottom_toBottomOf="parent"
+            sweet:layout_constraintStart_toStartOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent"
+            sweet:layout_constraintVertical_bias="0" />
+
+        <ImageView
+            android:id="@+id/butonlogout"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            sweet:layout_constraintEnd_toEndOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent"
+            sweet:srcCompat="@drawable/iconlogout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/konten"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="124dp"
+            sweet:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNamapetugas"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginBottom="15dp"
+            android:text="20650009"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            sweet:layout_constraintBottom_toTopOf="@+id/konten"
+            sweet:layout_constraintEnd_toEndOf="parent"
+            sweet:layout_constraintHorizontal_bias="0.02"
+            sweet:layout_constraintStart_toStartOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent"
+            sweet:layout_constraintVertical_bias="0.383" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ee66a6"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/tombol_kembali"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/logo_kembali" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Jadwal Posyandu"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/cari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_kotak_pencarian"
+            android:drawableRight="@drawable/icon_search"
+            android:hint="Cari Jadwal..."
+            android:padding="3dp"
+            android:singleLine="true"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

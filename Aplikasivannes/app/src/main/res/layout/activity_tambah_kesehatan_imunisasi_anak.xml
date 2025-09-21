@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/biru" android:layout_width="match_parent" android:layout_height="55dp">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvNama" android:padding="3dp" android:layout_width="360dp" android:layout_height="wrap_content" android:text="E-Posyandu Petugas" sweet:layout_constraintBottom_toBottomOf="parent" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0"/>
+        <ImageView android:id="@+id/butonlogout" android:layout_width="36dp" android:layout_height="39dp" android:layout_marginTop="10dp" android:layout_marginEnd="4dp" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:srcCompat="@drawable/iconlogout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/konten" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="124dp" sweet:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:textSize="15dp" android:textColor="@color/white" android:id="@+id/tvNamapetugas" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginBottom="15dp" android:text="20650009" sweet:layout_constraintBottom_toTopOf="@+id/konten" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintHorizontal_bias="0.02" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0.383"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <FrameLayout android:background="#ee66a6" android:padding="6dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/tombol_kembali" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="1dp" android:src="@drawable/logo_kembali"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/judulcatatankehamilan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Kesehatan Imunisasi Anak"/>
+    </FrameLayout>
+    <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/txttambahdata" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tambah Data" android:textAlignment="center"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="NIK"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <Spinner android:id="@+id/spinnernik_ibu" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="140dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nama Ibu"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nama_ibuku" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nama Anak"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <Spinner android:id="@+id/spinnernama_anak" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="140dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Anak Ke -"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/anak_ke" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <Button android:textStyle="bold" android:id="@+id/btnsimpan" android:background="@drawable/rounded_tombol_simpan_data_anak" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="10dp" android:text="Simpan" android:textAllCaps="false"/>
+                <Button android:textStyle="bold" android:id="@+id/btnbatal" android:background="@drawable/rounded_tombol_batal_simpan_data_anak" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="Batal" android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 0 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_0" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_0" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_0" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_0" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 1 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 2 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_2" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_2" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_2" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_2" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 3 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 4 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_4" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_4" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_4" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_4" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 5 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_5" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_5" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_5" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_5" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 6 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 7 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_7" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_7" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_7" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_7" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 8 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_8" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_8" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_8" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_8" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 9 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 10 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_10" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_10" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_10" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_10" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 11 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_11" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_11" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_11" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_11" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Umur 12 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Vaksi"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:text="Tanggal Pemberian Imunisasi"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hepatitis B\10(Kurang 24 Jam)"/>
+                            <EditText android:id="@+id/etxhepatitis_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="BCG"/>
+                            <EditText android:id="@+id/etxbcg_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Polio tetes 1"/>
+                            <EditText android:id="@+id/etxpolio_tetes_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Dan Lain-lain"/>
+                            <EditText android:id="@+id/etxdan_lain_lain_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

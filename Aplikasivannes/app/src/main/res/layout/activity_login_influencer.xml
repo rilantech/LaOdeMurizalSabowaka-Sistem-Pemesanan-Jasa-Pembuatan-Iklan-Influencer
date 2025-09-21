@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:ndroid="http://schemas.android.com/apk/distribution"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapk"
+    tools:context=".Login_Influencer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:text="VnesZ\n Influencer"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_kotak_login"
+            android:orientation="vertical"
+            android:padding="20dp"
+            sweet:layout_constraintBottom_toBottomOf="parent"
+            sweet:layout_constraintEnd_toEndOf="parent"
+            sweet:layout_constraintHorizontal_bias="0"
+            sweet:layout_constraintStart_toStartOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent"
+            sweet:layout_constraintVertical_bias="0.863">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logoapk2" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_editext_login"
+                android:drawablePadding="8dp"
+                android:hint="Masukan Username"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_editext_login"
+                    android:drawableRight="@drawable/showpassword"
+                    android:drawablePadding="20dp"
+                    android:hint="Masukan Password"
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvLupakatasandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="Lupa Kata Sandi?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_btnlogin"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/linkbelumpunyaakun"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="©Copyrigth Teknik Informatika\n Unidayan 2025"
+            android:textColor="#1FAC9F"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

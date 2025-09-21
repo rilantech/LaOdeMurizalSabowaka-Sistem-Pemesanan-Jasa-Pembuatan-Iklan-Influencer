@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/biru" android:layout_width="match_parent" android:layout_height="55dp">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvNama" android:padding="3dp" android:layout_width="360dp" android:layout_height="wrap_content" android:text="E-Posyandu Petugas" sweet:layout_constraintBottom_toBottomOf="parent" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0"/>
+        <ImageView android:id="@+id/butonlogout" android:layout_width="36dp" android:layout_height="39dp" android:layout_marginTop="10dp" android:layout_marginEnd="4dp" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:srcCompat="@drawable/iconlogout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/konten" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="124dp" sweet:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:textSize="15dp" android:textColor="@color/white" android:id="@+id/tvNamapetugas" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginBottom="15dp" android:text="20650009" sweet:layout_constraintBottom_toTopOf="@+id/konten" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintHorizontal_bias="0.02" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0.383"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <FrameLayout android:background="#ee66a6" android:padding="6dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/tombol_kembali" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="1dp" android:src="@drawable/logo_kembali"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/judulcatatankehamilan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Detail Kesehatan Ibu Bersalin"/>
+    </FrameLayout>
+    <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/txttambahdata" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tambah Data" android:textAlignment="center"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <Button android:textStyle="bold" android:id="@+id/btnsimpan" android:background="@drawable/rounded_tombol_simpan_data_anak" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="10dp" android:text="Simpan" android:textAllCaps="false"/>
+                <Button android:textStyle="bold" android:id="@+id/btnbatal" android:background="@drawable/rounded_tombol_batal_simpan_data_anak" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="Batal" android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/cardviewjadwalposyandu" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/waktu_post" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Data Ibu" android:textAlignment="center"/>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Anak Ke-"/>
+                            <EditText android:id="@+id/etxanakke" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Persalinan"/>
+                            <EditText android:id="@+id/etxtanggalpersalinan" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Pukul"/>
+                            <EditText android:id="@+id/etxpukul" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Umur Kehamilan\n(Minggu)"/>
+                            <EditText android:id="@+id/etxumur_kehamilan" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Penolong Persalinan"/>
+                            <EditText android:id="@+id/etxpenolongpersalinan" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Cara Persalinan"/>
+                            <EditText android:id="@+id/etxcarapersalinan" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="20dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Keadaan Ibu"/>
+                            <EditText android:id="@+id/etxkeadaanibu" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Keterangan\nTambahan Ibu"/>
+                            <EditText android:id="@+id/etxketerangan_tambahan_ibu" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:padding="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Berat Lahir (gram)"/>
+                            <EditText android:id="@+id/etxberat_lahir" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Panjang Badan (cm)"/>
+                            <EditText android:id="@+id/etxpanjangbadan" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Lingkar Kepala (cm)"/>
+                            <EditText android:id="@+id/etxlingkar_kepala" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Jenis Kelamin"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/jenis_kelamin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:id="@+id/rblaki_laki" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Laki-Laki"/>
+                                <RadioButton android:id="@+id/rbperempuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Perempuan"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Kondisi Bayi\nSaat Lahir"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <CheckBox android:id="@+id/check1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Segera menangis"/>
+                                <CheckBox android:id="@+id/check2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menangis beberapa saat"/>
+                                <CheckBox android:id="@+id/check3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tidak menangis"/>
+                                <CheckBox android:id="@+id/check4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seluruh tubuh kemerahan"/>
+                                <CheckBox android:id="@+id/check5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Anggota gerak kebiruan"/>
+                                <CheckBox android:id="@+id/check6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seluruh tubuh biru"/>
+                                <CheckBox android:id="@+id/check7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kelainan bawaan"/>
+                                <CheckBox android:id="@+id/check8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Meninggal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Asuhan Bayi\nBaru Lahir"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <CheckBox android:id="@+id/check9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Inisiasi menyusu dini (IMD) dalam 1 jam pertama kelahiran bayi"/>
+                                <CheckBox android:id="@+id/check10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suntikan Vitamin K1"/>
+                                <CheckBox android:id="@+id/check11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Salep mata antibiotika profilaksis"/>
+                                <CheckBox android:id="@+id/check12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Imunisasi Hepatitis B "/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Keterangan Tambahan nAnak"/>
+                            <EditText android:id="@+id/etxketerangan_tambahan_anak" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

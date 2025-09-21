@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/biru" android:layout_width="match_parent" android:layout_height="55dp">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvNama" android:padding="3dp" android:layout_width="360dp" android:layout_height="wrap_content" android:text="E-Posyandu Petugas" sweet:layout_constraintBottom_toBottomOf="parent" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0"/>
+        <ImageView android:id="@+id/butonlogout" android:layout_width="36dp" android:layout_height="39dp" android:layout_marginTop="10dp" android:layout_marginEnd="4dp" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:srcCompat="@drawable/iconlogout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/konten" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="124dp" sweet:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:textSize="15dp" android:textColor="@color/white" android:id="@+id/tvNamapetugas" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginBottom="15dp" android:text="20650009" sweet:layout_constraintBottom_toTopOf="@+id/konten" sweet:layout_constraintEnd_toEndOf="parent" sweet:layout_constraintHorizontal_bias="0.02" sweet:layout_constraintStart_toStartOf="parent" sweet:layout_constraintTop_toTopOf="parent" sweet:layout_constraintVertical_bias="0.383"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <FrameLayout android:background="#ee66a6" android:padding="6dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/tombol_kembali" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="1dp" android:src="@drawable/logo_kembali"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/judulcatatankehamilan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Matriks Pantau Perkembangan Anak"/>
+    </FrameLayout>
+    <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/txttambahdata" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tambah Data" android:textAlignment="center"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="NIK"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <Spinner android:id="@+id/spinnernik_ibu" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="140dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nama Ibu"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/nama_ibuku" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Nama Anak"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <Spinner android:id="@+id/spinnernama_anak" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="140dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Anak Ke -"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text=":"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/anak_ke" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:text="nik"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <Button android:textStyle="bold" android:id="@+id/btnsimpan" android:background="@drawable/rounded_tombol_simpan_data_anak" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="10dp" android:text="Simpan" android:textAllCaps="false"/>
+                <Button android:textStyle="bold" android:id="@+id/btnbatal" android:background="@drawable/rounded_tombol_batal_simpan_data_anak" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="Batal" android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 1 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_1" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 3 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_3" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 6 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_6" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 9 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_9" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 12 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_12" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 15 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_15" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_15" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_15" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_15" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 18 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_18" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_18" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_18" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_18" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 21 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_21" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_21" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_21" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_21" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 24 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_24" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_24" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_24" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_24" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 30 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_30" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_30" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_30" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_30" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 36 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_36" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_36" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_36" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_36" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 42 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_42" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_42" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_42" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_42" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 48 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_48" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_48" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_48" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_48" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 54 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_54" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_54" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_54" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_54" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 60 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_60" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_60" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_60" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_60" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 66 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_66" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_66" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_66" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_66" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_kotak_jadwalposyandu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Usia Anak 72 Bulan"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pantau\10Perkembangan"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_perkembangan_72" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Hasil"/>
+                            <EditText android:id="@+id/etxhasil_72" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tindakan"/>
+                            <EditText android:id="@+id/etxtindakan_72" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/black" android:paddingBottom="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Tanggal Pemantauan Selanjutnya"/>
+                            <EditText android:id="@+id/etxtanggal_pemantauan_selanjutnya_72" android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="right" android:id="@+id/kotakchat" android:background="@drawable/rounded_kotak_chatting" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13dp" android:textColor="@color/white" android:id="@+id/isi_pesan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Isi Pesan"/>
+            <TextView android:textSize="7dp" android:textColor="@color/white" android:id="@+id/waktu_kirim" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nama"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

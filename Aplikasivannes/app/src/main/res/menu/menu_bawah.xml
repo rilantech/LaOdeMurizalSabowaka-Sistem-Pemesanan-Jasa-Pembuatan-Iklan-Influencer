@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/project"
+    android:title="Project"
+    android:icon="@drawable/ikonproject"/>
+    <item android:id="@+id/progress"
+        android:title="Progress"
+        android:icon="@drawable/ikonprogress"/>
+    <item android:id="@+id/profil"
+        android:title="Profil"
+        android:icon="@drawable/ikonprofil"/>
+</menu>

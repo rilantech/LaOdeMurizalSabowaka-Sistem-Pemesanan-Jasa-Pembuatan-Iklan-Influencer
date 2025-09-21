@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_tambah_project_brand">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B3935"
+        android:padding="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tombol_kembali"
+                android:src="@drawable/icon_tombol_kembali"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:paddingRight="40dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Progress"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:paddingBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvJudul_Progress"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Judul Progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Logo Brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_baseline_file_upload_24"
+                    android:id="@+id/ivLogo_Brand"
+                    android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Link Draft"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=" (Google Drive)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <EditText
+                        android:textSize="15dp"
+                        android:hint="Masukan Link Draft"
+                        android:padding="5dp"
+                        android:id="@+id/etLink_Draft"
+                        android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Link Bukti Post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:textSize="15dp"
+                        android:hint="Masukan Link Bukti Post"
+                        android:padding="5dp"
+                        android:id="@+id/etLink_Bukti_Post"
+                        android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Status Project"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <FrameLayout
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/kotak_status_project"
+                            android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginRight="5dp"
+                            android:text="ACC"
+                            android:id="@+id/tv_acc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/garing1"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="5dp"
+                            android:text="/"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginRight="5dp"
+                            android:text="Revisi"
+                            android:id="@+id/tv_revisi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/garing2"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="5dp"
+                            android:text="/"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginRight="5dp"
+                            android:text="Ditolak"
+                            android:id="@+id/tv_ditolak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/garing3"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="5dp"
+                            android:text="/"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginRight="5dp"
+                            android:text="Dibayar"
+                            android:id="@+id/tv_dibayar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Revisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:enabled="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="15dp"
+                android:hint="-Belum Ada-"
+                android:gravity="start"
+                android:padding="5dp"
+                android:id="@+id/etRevisi"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nomor Rekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" (Dana / GoPay)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <EditText
+                android:textSize="15dp"
+                android:hint="Disi Jika Project Telah Di ACC"
+                android:padding="5dp"
+                android:id="@+id/etNomor_Rekening"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Bukti Pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:padding="30dp"
+                android:src="@drawable/ic_baseline_file_upload_24"
+                android:id="@+id/ivBukti_Pembayaran"
+                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnbatal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_tombol_batal_simpan_data_anak"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnsimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rounded_tombol_simpan_data_anak"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

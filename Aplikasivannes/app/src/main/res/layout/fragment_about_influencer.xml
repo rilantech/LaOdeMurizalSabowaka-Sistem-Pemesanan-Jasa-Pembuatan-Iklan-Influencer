@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B3935"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/tombol_kembali"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_tombol_kembali" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp"
+            android:text="About / Tentang"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:lineSpacingExtra="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Sistem ini merupakan sebuah sistem pemesanan jasa pembuatan iklan influencer berbasis website dan android sebagai penunjang pelaku UMKM dalam pemasaran produk secara luas dan sebagai penunjang influencer dalam mendapatkan pekerjaan. Dengan adanya aplikasi dan website pemesanan jasa pembuatan iklan ini diharapkan dapat membantu pelaku UMKM kota Baubau dalam mempromosikan produk secara maksimal Selain itu, aplikasi ini menyediakan lowongan pekerjaan untuk para Influencer di kota Baubau yang lebih menguntungkan. "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

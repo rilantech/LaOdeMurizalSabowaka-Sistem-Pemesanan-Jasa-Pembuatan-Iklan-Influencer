@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:ndroid="http://schemas.android.com/apk/distribution"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewproject"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        sweet:cardBackgroundColor="@color/white"
+        sweet:cardCornerRadius="10dp"
+        sweet:cardElevation="5dp"
+        sweet:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_marginBottom="3dp"
+          android:textSize="7dp"
+          android:textStyle="italic"
+          android:id="@+id/tvTanggal_Posting"
+          android:text="Tgl Post:"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/ivLogo_Brand"
+            android:src="@drawable/iconhiburan"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="7dp"
+            android:textStyle="italic"
+            android:id="@+id/tvNama_Brand"
+            android:text="Tgl Post:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/tvNama_Project"
+            android:textSize="10dp"
+            android:text="Tgl Post:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:id="@+id/tvGaji_Influencer"
+            android:text="Tgl Post:"
+            android:textSize="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/tvlama_kontrak"
+            android:text="Tgl Post:"
+            android:textSize="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

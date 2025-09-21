@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Aplikasipetugas</string>
+    <string name="umur">umur</string>
+    <string name="berat_badan">Berat Badan</string>
+    <string name="linksudahpunyaakun">Sudah Punya Akun? Login</string>
+    <string name="linkbelumpunyaakun">Belum Punya Akun? Register</string>
+    <array name="kategori">
+        <item>Fashion &amp; Accessories</item>
+        <item>Food &amp; Drink</item>
+        <item>Electronic</item>
+        <item>Beauty</item>
+        <item>Tech</item>
+    </array>
+    <array name="lama_kontrak">
+        <item>1 Minggu</item>
+        <item>2 Minggu</item>
+        <item>3 Minggu</item>
+        <item>1 Bulan</item>
+        <item>2 Bulan</item>
+        <item>3 Bulan</item>
+        <item>4 Bulan</item>
+        <item>5 Bulan</item>
+        <item>6 Bulan</item>
+        <item>7 Bulan</item>
+        <item>8 Bulan</item>
+        <item>9 Bulan</item>
+        <item>10 Bulan</item>
+        <item>11 Bulan</item>
+        <item>12 Bulan</item>
+    </array>
+    <array name="status_project">
+        <item>Sedang Dikerjakan</item>
+        <item>ACC</item>
+        <item>Revisi</item>
+        <item>Ditolak</item>
+    </array>
+    <array name="agama">
+        <item>-Pilih-</item>
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Budha</item>
+        <item>Hindu</item>
+        <item>Konghuchu</item>
+    </array>
+    <array name="jenis_kelamin">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </array>
+    <array name="jenis_kelamin2">
+        <item>-Pilih-</item>
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </array>
+    <array name="lahir_aterm">
+        <item>-Pilih-</item>
+        <item>Aterm</item>
+        <item>Mati</item>
+        <item>Preterm</item>
+        <item>Post Term</item>
+    </array>
+    <array name="lahir_hidup">
+        <item>-Pilih-</item>
+        <item>Hidup</item>
+        <item>Mati</item>
+        <item>Abortus</item>
+    </array>
+    <array name="lahir_spontan">
+        <item>-Pilih-</item>
+        <item>Spontan</item>
+        <item>SC</item>
+        <item>Lainnya</item>
+    </array>
+    <array name="pendidikan">
+        <item>-Pilih-</item>
+        <item>TK/Sederajat</item>
+        <item>SD/Sederajat</item>
+        <item>SMP/Sederajat</item>
+        <item>SMA/Sederajat</item>
+        <item>S-1/Sederajat</item>
+        <item>S-2/Sederajat</item>
+        <item>S-3/Sederajat</item>
+        <item>Tidak Sekolah</item>
+    </array>
+    <array name="pilih_akun">
+        <item>Petugas Posyandu</item>
+        <item>Admin</item>
+        <item>Ibu Posyandu</item>
+    </array>
+    <array name="pilih_datakesehatan_anak">
+        <item>Kesehatan Bayi Baru Lahir</item>
+        <item>Kesehatan Imunisasi Anak</item>
+        <item>Pemberian Vitamin &amp; Obat Cacing</item>
+        <item>Matriks Pantau Perkembangan Anak</item>
+        <item>Data KMS</item>
+    </array>
+    <array name="pilih_datakesehatan_ibu">
+        <item>Kesehatan Ibu Hamil</item>
+        <item>Kesehatan Ibu Bersalin</item>
+        <item>Kesehatan Ibu Nifas</item>
+    </array>
+    <array name="pilih_keadaan_bayi">
+        <item>-Pilih-</item>
+        <item>Sehat</item>
+        <item>Sakit</item>
+        <item>Kelainan Bawaan</item>
+        <item>Meninggal</item>
+    </array>
+    <array name="pilih_keadaan_ibu">
+        <item>-Pilih-</item>
+        <item>Sehat</item>
+        <item>Sakit</item>
+        <item>Meninggal</item>
+    </array>
+    <array name="pilih_komplikasi_nifas">
+        <item>-Pilih-</item>
+        <item>Pendarahan</item>
+        <item>Infeksi</item>
+        <item>Hipertensi</item>
+        <item>Lain-lain: Depresi post partum</item>
+    </array>
+</resources>

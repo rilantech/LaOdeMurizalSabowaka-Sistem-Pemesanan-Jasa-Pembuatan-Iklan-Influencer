@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ndroid="http://schemas.android.com/apk/distribution" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@drawable/strokemenuberanda" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:padding="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/foto" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="10dp" android:scaleType="fitCenter" sweet:srcCompat="@drawable/user"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Nama"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="120dp" android:text=":"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvNama" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text="nama"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Alamat"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="120dp" android:text=":"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvAlamat" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text="nis"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Nomor HP"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="120dp" android:text=":"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvNomorhp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text="nomorhp"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Username"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="120dp" android:text=":"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvUsername" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text="username"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Password"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="120dp" android:text=":"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="130dp" android:text="password"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

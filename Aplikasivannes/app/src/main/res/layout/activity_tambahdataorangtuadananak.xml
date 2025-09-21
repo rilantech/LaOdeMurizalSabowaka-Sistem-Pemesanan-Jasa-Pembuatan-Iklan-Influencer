@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:ndroid="http://schemas.android.com/apk/distribution"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/biru">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="E-Posyandu Petugas"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            sweet:layout_constraintBottom_toBottomOf="parent"
+            sweet:layout_constraintStart_toStartOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent"
+            sweet:layout_constraintVertical_bias="0" />
+
+        <ImageView
+            android:id="@+id/butonlogout"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            sweet:layout_constraintEnd_toEndOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent"
+            sweet:srcCompat="@drawable/iconlogout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/konten"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="124dp"
+            sweet:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNamapetugas"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginBottom="15dp"
+            android:text="20650009"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            sweet:layout_constraintBottom_toTopOf="@+id/konten"
+            sweet:layout_constraintEnd_toEndOf="parent"
+            sweet:layout_constraintHorizontal_bias="0.02"
+            sweet:layout_constraintStart_toStartOf="parent"
+            sweet:layout_constraintTop_toTopOf="parent"
+            sweet:layout_constraintVertical_bias="0.383" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ee66a6"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/tombol_kembali"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/logo_kembali" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Data Orang Tua Dan Anak"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txttambahdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Tambah Data"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnsimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_tombol_simpan_data_anak"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnbatal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_tombol_batal_simpan_data_anak"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardviewjadwalposyandu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_kotak_jadwalposyandu">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/waktu_post"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Data Ibu"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Nama"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnamaibu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="NIK"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnik"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Tempat/Tanggal Lahir"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxttl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Agama"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spinneragama"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:entries="@array/agama" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Pendidikan"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spinnerpendidikan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:entries="@array/pendidikan" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Golongan Darah"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxgoldarah"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Pekerjaan"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxpekerjaan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="No. JKN/BPJS"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnojkn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_kotak_jadwalposyandu">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Data Suami"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Nama"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnamasuami"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Tempat/Tanggal Lahir"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxttlsuami"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Agama"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spinneragamasuami"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:entries="@array/agama" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Pendidikan"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spinnerpendidikansuami"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:entries="@array/pendidikan" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Golongan Darah"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxgoldarahsuami"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Pekerjaan"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxpekerjaansuami"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_kotak_jadwalposyandu">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Data Lain Orang Tua"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Alamat Rumah"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxalamatrumah"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Kecamatan"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxkecamatan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Kabupaten/Kota"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxkabupaten"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="No. Telp Yang Bisa Di Hubungi"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnotelp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btntambahdataanak"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_tombol_tambah_data_anak"
+                android:text="Tambah Data Anak"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_kotak_jadwalposyandu">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Data Anak Ke-1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Nama Anak"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnamaanak"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Jenis Kelamin"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spinner_jeniskelamin1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:entries="@array/jenis_kelamin2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Tempat/Tanggal Lahir"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxttlanak"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Anak Ke-"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxanakke"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Dari"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxdari"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Anak"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="No. Akte Kelahiran"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnoaktekelahiran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="No. JKN/BPJS"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etxnobpjsanak"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_kotak_input_tambah_data_orangtuadananak" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
