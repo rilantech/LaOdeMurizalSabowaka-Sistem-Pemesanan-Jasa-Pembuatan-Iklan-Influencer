@@ -22,3 +22,6 @@ Aplikasi android CRUD yang digunakan oleh brand dan influencer yang memiliki fun
 
 ## Spefikasi Smartphone Untuk Instal Aplikasi Android
 - Sistem operasi : Android 10
+
+## Detail Menu-Menu
+Bisa dilihat di file Sistem Pemesanan Jasa Pembuatan Iklan Influencer.PDF : https://github.com/rilantech/LaOdeMurizalSabowaka-Sistem-Pemesanan-Jasa-Pembuatan-Iklan-Influencer/blob/main/Sistem%20Pemesanan%20Jasa%20Pembuatan%20Iklan%20Influencer.pdf
